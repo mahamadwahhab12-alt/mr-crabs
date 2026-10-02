@@ -1,0 +1,57 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mr. Crabs - Menu CMS</title>
+  <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Nunito:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Nunito', sans-serif; }
+    .nc-brand { font-family: 'Fredoka', cursive; }
+  </style>
+</head>
+<body>
+  <script>
+    window.config = {
+      backend: {
+        name: 'git-gateway',
+        branch: 'main'
+      },
+      media_folder: 'images',
+      public_folder: '/images',
+      collections: [{
+        name: 'menu',
+        label: 'Menu',
+        folder: 'data',
+        create: false,
+        slug: 'menu',
+        fields: [
+          {
+            label: 'Menu Categories',
+            name: 'menuCategories',
+            widget: 'list',
+            fields: [
+              { label: 'ID', name: 'id', widget: 'string', required: true },
+              { label: 'Name', name: 'name', widget: 'string', required: true },
+              { label: 'Icon', name: 'icon', widget: 'string', required: true },
+              {
+                label: 'Items',
+                name: 'items',
+                widget: 'list',
+                fields: [
+                  { label: 'ID', name: 'id', widget: 'string', required: true },
+                  { label: 'Name', name: 'name', widget: 'string', required: true },
+                  { label: 'Price (IQD)', name: 'price', widget: 'number', required: true, min: 0 },
+                  { label: 'Image Path', name: 'image', widget: 'string', required: true },
+                  { label: 'Description', name: 'description', widget: 'text', required: false }
+                ]
+              }
+            ]
+          }
+        ]
+      }]
+    };
+  </script>
+</body>
+</html>

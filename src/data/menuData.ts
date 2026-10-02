@@ -1,0 +1,142 @@
+export interface MenuItem {
+  id: string;
+  name: string;
+  price: number;
+  image: string;
+  description?: string;
+}
+
+export interface MenuCategory {
+  id: string;
+  name: string;
+  icon: string;
+  items: MenuItem[];
+}
+
+export interface MenuData {
+  menuCategories: MenuCategory[];
+}
+
+// Fallback data in case fetch fails
+export const fallbackMenuData: MenuData = {
+  menuCategories: [
+    {
+      id: 'burgers',
+      name: 'Burgers',
+      icon: '🍔',
+      items: [
+        { id: 'chicken-burger', name: 'Chicken Burger', price: 4000, image: '/images/burgers/Chicken Burger.jpg' },
+        { id: 'chicken-cheese-burger', name: 'Chicken Cheese Burger', price: 4500, image: '/images/burgers/Chicken Cheese Burger.jpg' },
+        { id: 'classic-burger', name: 'Classic Burger', price: 5000, image: '/images/burgers/Classic Burger.jpg' },
+        { id: 'classic-cheese-burger', name: 'Classic Cheese Burger', price: 5500, image: '/images/burgers/Classic Cheese Burger.jpg' },
+        { id: 'plankton-spicy-burger', name: 'Plankton Spicy Burger', price: 5500, image: '/images/burgers/Plankton Spicy Burger.jpg' },
+        { id: 'double-plankton-spicy-burger', name: 'Double Plankton Spicy Burger', price: 8500, image: '/images/burgers/Double Plankton Spicy Burger.jpg' },
+        { id: 'crabs-burger', name: 'Crabs Burger', price: 6000, image: '/images/burgers/Crabs Burger.jpg' },
+        { id: 'double-crabs-burger', name: 'Double Crabs Burger', price: 9000, image: '/images/burgers/Double Crabs Burger.jpg' },
+        { id: 'double-classic-burger', name: 'Double Classic Burger', price: 8000, image: '/images/burgers/Double Classic Burger.jpg' },
+        { id: 'cheese-sponge-burger', name: 'Cheese Sponge Burger', price: 7000, image: '/images/burgers/Cheese Sponge Burger.jpg' },
+        { id: 'classic-double-cheese-burger', name: 'Classic Double Cheese Burger', price: 8500, image: '/images/burgers/Classic Double Cheese Burger.jpg' },
+        { id: 'double-chicken-burger', name: 'Double Chicken Burger', price: 6000, image: '/images/burgers/Double Chicken Burger.jpg' },
+        { id: 'double-chicken-cheese-burger', name: 'Double Chicken Cheese Burger', price: 6500, image: '/images/burgers/Double Chicken Cheese burger.jpg' },
+        { id: 'classic-triple-burger', name: 'Classic Triple Burger', price: 11000, image: '/images/burgers/Classic Triple Burger.jpg' },
+        { id: 'classic-triple-cheese-burger', name: 'Classic Triple Cheese Burger', price: 12000, image: '/images/burgers/Classic Triple Cheese Burger.jpg' },
+        { id: 'triple-chicken-burger', name: 'Triple Chicken Burger', price: 8000, image: '/images/burgers/Triple Chicken Burger.jpg' },
+        { id: 'triple-chicken-cheese-burger', name: 'Triple Chicken Cheese Burger', price: 9000, image: '/images/burgers/Triple Chicken Cheese burger.jpg' },
+      ],
+    },
+    {
+      id: 'rizo',
+      name: 'Rizo',
+      icon: '🍚',
+      items: [
+        { id: 'mr-crabs-rizo', name: 'Mr Crabs Rizo', price: 5000, image: '/images/rizo/Mr Crabs Rizo.jpg' },
+        { id: 'bbq-rizo', name: 'BBQ Rizo', price: 5000, image: '/images/rizo/BBQ Rizo.jpg' },
+        { id: 'texas-rizo', name: 'Texas Rizo', price: 5000, image: '/images/rizo/Texas Rizo.jpg' },
+        { id: 'hamur-rizo', name: 'Hamur Rizo', price: 6000, image: '/images/rizo/Hamur Rizo.jpg' },
+        { id: 'cheese-rizo', name: 'Cheese Rizo', price: 6000, image: '/images/rizo/Cheese Rizo.jpg' },
+        { id: 'classic-rizo', name: 'Classic Rizo', price: 4000, image: '/images/rizo/Classic Rizo.jpg' },
+      ],
+    },
+    {
+      id: 'sandwich',
+      name: 'Sandwich',
+      icon: '🥪',
+      items: [
+        { id: 'zinger', name: 'Zinger', price: 4000, image: '/images/sandwich/Zinger.jpg' },
+        { id: 'chicken-wrap', name: 'Chicken Wrap', price: 4000, image: '/images/sandwich/Chicken Wrap.jpg' },
+        { id: 'shawarma', name: 'Shawarma', price: 1500, image: '/images/sandwich/Shawrma.jpg' },
+        { id: 'double-shawarma', name: 'Double Shawarma', price: 3000, image: '/images/sandwich/Double Shawrma.jpg' },
+        { id: 'shawarma-meal', name: 'Shawarma Meal', price: 5000, image: '/images/sandwich/Shawrma Meal.jpg' },
+      ],
+    },
+    {
+      id: 'kentucky',
+      name: 'Kentucky',
+      icon: '🍗',
+      items: [
+        { id: 'kentucky', name: 'Kentucky', price: 1250, image: '/images/kentucky/Kentucky.jpg' },
+        { id: 'kentucky-meal', name: 'Kentucky Meal', price: 5000, image: '/images/kentucky/Kentucky Meal.jpg' },
+      ],
+    },
+    {
+      id: 'sides',
+      name: 'Sides',
+      icon: '🍟',
+      items: [
+        { id: 'fries', name: 'Fries', price: 1000, image: '/images/sides/Fries.jpg' },
+        { id: 'honey-mustard', name: 'Honey Mustard', price: 500, image: '/images/sides/Honey Mustard.jpg' },
+        { id: 'sweet-chilli', name: 'Sweet Chilli', price: 500, image: '/images/sides/Sweet Chilli.jpg' },
+        { id: 'texas-sauce', name: 'Texas', price: 500, image: '/images/sides/Texas.jpg' },
+        { id: 'hawaii-sauce', name: 'Hawaii', price: 500, image: '/images/sides/Hawaii.jpg' },
+      ],
+    },
+    {
+      id: 'special',
+      name: 'Special',
+      icon: '⭐',
+      items: [
+        { id: 'locomoco-special', name: 'LocoMoco Meal', price: 15000, image: '/images/special/LocoMoco Meal.jpg' },
+      ],
+    },
+  ],
+};
+
+let cachedMenuData: MenuData | null = null;
+
+export const loadMenuData = async (): Promise<MenuData> => {
+  if (cachedMenuData) {
+    return cachedMenuData;
+  }
+
+  try {
+    const response = await fetch('/data/menu.json');
+    if (response.ok) {
+      const data = await response.json();
+      cachedMenuData = data;
+      return data;
+    }
+  } catch (error) {
+    console.warn('Failed to load menu.json, using fallback:', error);
+  }
+
+  cachedMenuData = fallbackMenuData;
+  return fallbackMenuData;
+};
+
+export const getMenuData = (): MenuData => {
+  return cachedMenuData || fallbackMenuData;
+};
+
+export const formatPrice = (price: number): string => {
+  return new Intl.NumberFormat('en-IQ', { style: 'currency', currency: 'IQD', minimumFractionDigits: 0 }).format(price);
+};
+
+// For backward compatibility - will be populated after loadMenuData is called
+export let menuCategories: MenuCategory[] = fallbackMenuData.menuCategories;
+
+// Initialize menu categories (will be updated after async load)
+export const initMenuData = async () => {
+  const data = await loadMenuData();
+  menuCategories = data.menuCategories;
+  return data.menuCategories;
+};

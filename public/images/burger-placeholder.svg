@@ -1,0 +1,54 @@
+<svg width="400" height="300" viewBox="0 0 400 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="400" height="300" fill="url(#bgGradient)"/>
+  <defs>
+    <linearGradient id="bgGradient" x1="0" y1="0" x2="400" y2="300" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#006D77"/>
+      <stop offset="100%" stop-color="#008C95"/>
+    </linearGradient>
+  </defs>
+  <g transform="translate(200, 150)">
+    <!-- Top bun -->
+    <ellipse cx="0" cy="-50" rx="55" ry="18" fill="url(#bunGradient)"/>
+    <defs>
+      <linearGradient id="bunGradient" x1="-55" y1="-68" x2="55" y2="-32" gradientUnits="userSpaceOnUse">
+        <stop offset="0%" stop-color="#F4B942"/>
+        <stop offset="50%" stop-color="#F6D365"/>
+        <stop offset="100%" stop-color="#F4B942"/>
+      </linearGradient>
+    </defs>
+    <!-- Sesame seeds -->
+    <g fill="#E8A838">
+      <ellipse cx="-30" cy="-55" rx="3" ry="1.5"/>
+      <ellipse cx="10" cy="-58" rx="2.5" ry="1.2"/>
+      <ellipse cx="35" cy="-53" rx="3" ry="1.5"/>
+      <ellipse cx="-15" cy="-48" rx="2.5" ry="1.2"/>
+      <ellipse cx="25" cy="-56" rx="2.5" ry="1.2"/>
+    </g>
+    <!-- Lettuce -->
+    <path d="M-50 -35 Q-30 -45 0 -38 Q30 -45 50 -35 Q30 -25 0 -28 Q-30 -25 -50 -35" fill="#4CAF50" opacity="0.9"/>
+    <!-- Tomato -->
+    <ellipse cx="0" cy="-10" rx="45" ry="8" fill="#FF6B6B"/>
+    <ellipse cx="0" cy="-10" rx="40" ry="6" fill="#E91E63"/>
+    <!-- Cheese -->
+    <path d="M-45 5 L45 5 L35 18 L-35 18 Z" fill="#FFD700"/>
+    <ellipse cx="-20" cy="12" rx="5" ry="3" fill="none" stroke="#F4B942" stroke-width="1.5"/>
+    <ellipse cx="10" cy="11" rx="4" ry="2.5" fill="none" stroke="#F4B942" stroke-width="1.5"/>
+    <ellipse cx="30" cy="12" rx="5" ry="3" fill="none" stroke="#F4B942" stroke-width="1.5"/>
+    <!-- Patty -->
+    <ellipse cx="0" cy="30" rx="48" ry="15" fill="#8D6E63"/>
+    <ellipse cx="0" cy="30" rx="42" ry="12" fill="#6D4C41"/>
+    <!-- Grill marks -->
+    <g stroke="#5D4037" stroke-width="2" opacity="0.6">
+      <line x1="-35" y1="20" x2="-15" y2="20"/>
+      <line x1="-10" y1="20" x2="10" y2="20"/>
+      <line x1="15" y1="20" x2="35" y2="20"/>
+      <line x1="-35" y1="35" x2="-15" y2="35"/>
+      <line x1="-10" y1="35" x2="10" y2="35"/>
+      <line x1="15" y1="35" x2="35" y2="35"/>
+    </g>
+    <!-- Bottom bun -->
+    <ellipse cx="0" cy="58" rx="55" ry="15" fill="url(#bunGradient)"/>
+  </g>
+  <text x="200" y="285" text-anchor="middle" fill="#FFD700" font-size="20" font-weight="bold" font-family="Fredoka, Arial">Burger</text>
+  <text x="200" y="305" text-anchor="middle" fill="#C8F7F2" font-size="14" font-family="Arial">Mr. Crabs Special</text>
+</svg>

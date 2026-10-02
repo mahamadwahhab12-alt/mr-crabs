@@ -1,0 +1,63 @@
+<svg width="400" height="300" viewBox="0 0 400 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="400" height="300" fill="url(#bgGradient)"/>
+  <defs>
+    <linearGradient id="bgGradient" x1="0" y1="0" x2="400" y2="300" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#006D77"/>
+      <stop offset="100%" stop-color="#008C95"/>
+    </linearGradient>
+  </defs>
+  <g transform="translate(200, 150)">
+    <!-- Fries container -->
+    <path d="M-60 -40 L-50 -80 L50 -80 L60 -40 L60 40 L-60 40 Z" fill="url(#containerGradient)" stroke="#FFD700" stroke-width="2"/>
+    <defs>
+      <linearGradient id="containerGradient" x1="-60" y1="-80" x2="60" y2="40" gradientUnits="userSpaceOnUse">
+        <stop offset="0%" stop-color="#E91E63"/>
+        <stop offset="50%" stop-color="#FF6B6B"/>
+        <stop offset="100%" stop-color="#E91E63"/>
+      </linearGradient>
+    </defs>
+    <!-- Fries -->
+    <g fill="url(#fryGradient)">
+      <defs>
+        <linearGradient id="fryGradient" x1="-55" y1="-75" x2="55" y2="35" gradientUnits="userSpaceOnUse">
+          <stop offset="0%" stop-color="#FFD700"/>
+          <stop offset="50%" stop-color="#F6D365"/>
+          <stop offset="100%" stop-color="#F4B942"/>
+        </linearGradient>
+      </defs>
+      <rect x="-50" y="-75" width="8" height="45" rx="2"/>
+      <rect x="-38" y="-78" width="7" height="48" rx="2"/>
+      <rect x="-26" y="-75" width="8" height="45" rx="2"/>
+      <rect x="-14" y="-80" width="7" height="50" rx="2"/>
+      <rect x="-2" y="-75" width="8" height="45" rx="2"/>
+      <rect x="10" y="-78" width="7" height="48" rx="2"/>
+      <rect x="22" y="-75" width="8" height="45" rx="2"/>
+      <rect x="34" y="-80" width="7" height="50" rx="2"/>
+      <rect x="46" y="-75" width="8" height="45" rx="2"/>
+    </g>
+    <!-- Sauce cups -->
+    <g transform="translate(80, -20)">
+      <!-- Honey Mustard -->
+      <path d="M-20 -30 L-10 -50 L10 -50 L20 -30 L20 10 L-20 10 Z" fill="#FFD700" opacity="0.9"/>
+      <text x="0" y="-10" text-anchor="middle" fill="#063B4C" font-size="8" font-weight="bold" font-family="Arial">HONEY</text>
+      <text x="0" y="0" text-anchor="middle" fill="#063B4C" font-size="8" font-weight="bold" font-family="Arial">MUSTARD</text>
+    </g>
+    <g transform="translate(80, 30)">
+      <!-- Sweet Chilli -->
+      <path d="M-20 -30 L-10 -50 L10 -50 L20 -30 L20 10 L-20 10 Z" fill="#FF6B6B" opacity="0.9"/>
+      <text x="0" y="-15" text-anchor="middle" fill="white" font-size="8" font-weight="bold" font-family="Arial">SWEET</text>
+      <text x="0" y="-5" text-anchor="middle" fill="white" font-size="8" font-weight="bold" font-family="Arial">CHILLI</text>
+    </g>
+    <!-- Texas & Hawaii sauce packets -->
+    <g transform="translate(-100, -20)">
+      <rect x="-20" y="-30" width="40" height="35" rx="4" fill="#F6D365" opacity="0.9"/>
+      <text x="0" y="-10" text-anchor="middle" fill="#063B4C" font-size="10" font-weight="bold" font-family="Arial">TEXAS</text>
+    </g>
+    <g transform="translate(-100, 30)">
+      <rect x="-20" y="-30" width="40" height="35" rx="4" fill="#FF8A65" opacity="0.9"/>
+      <text x="0" y="-10" text-anchor="middle" fill="white" font-size="10" font-weight="bold" font-family="Arial">HAWAII</text>
+    </g>
+  </g>
+  <text x="200" y="285" text-anchor="middle" fill="#FFD700" font-size="20" font-weight="bold" font-family="Fredoka, Arial">Sides & Sauces</text>
+  <text x="200" y="305" text-anchor="middle" fill="#C8F7F2" font-size="14" font-family="Arial">Perfect Pairings</text>
+</svg>

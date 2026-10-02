@@ -1,0 +1,28 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "images"
+public_folder: "/images"
+
+collections:
+  - name: "menu"
+    label: "Menu"
+    folder: "data"
+    create: false
+    slug: "{{slug}}"
+    fields:
+      - {label: "Menu Categories", name: "menuCategories", widget: "list", fields:
+        - {label: "ID", name: "id", widget: "string", required: true}
+        - {label: "Name", name: "name", widget: "string", required: true}
+        - {label: "Icon", name: "icon", widget: "string", required: true}
+        - {label: "Items", name: "items", widget: "list", fields:
+          - {label: "ID", name: "id", widget: "string", required: true}
+          - {label: "Name", name: "name", widget: "string", required: true}
+          - {label: "Price (IQD)", name: "price", widget: "number", required: true, min: 0}
+          - {label: "Image Path", name: "image", widget: "string", required: true}
+          - {label: "Description", name: "description", widget: "text", required: false}
+        }
+
+site_url: https://your-site-name.netlify.app
+display_url: https://your-site-name.netlify.app
