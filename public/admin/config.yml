@@ -1,5 +1,6 @@
 backend:
-  name: git-gateway
+  name: github
+  repo: mahamadwahab12-alt/mr-crabs
   branch: main
 
 media_folder: "images"
@@ -24,5 +25,5 @@ collections:
           - {label: "Description", name: "description", widget: "text", required: false}
         }
 
-site_url: https://your-site-name.netlify.app
-display_url: https://your-site-name.netlify.app
+site_url: https://mr-crabs-menu.netlify.app
+display_url: https://mr-crabs-menu.netlify.app
