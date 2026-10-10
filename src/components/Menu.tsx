@@ -305,7 +305,7 @@ export function Menu() {
               />
             </span>
           </p>
-          <div className="flex flex-wrap justify-center gap-4">
+          <div className="flex flex-wrap justify-center gap-4 mb-8">
             <button className="px-8 py-4 bg-gradient-to-r from-yellow-400 to-amber-500 text-[#063B4C] font-bold text-lg rounded-2xl hover:from-amber-500 hover:to-yellow-400 hover:shadow-[0_10px_30px_rgba(246,211,101,0.4)] transition-all duration-300 transform hover:-translate-y-[0.25rem] active:scale-[0.98] flex items-center gap-3">
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                 <circle cx="12" cy="12" r="10" />
@@ -320,6 +320,14 @@ export function Menu() {
               </svg>
               Find Us
             </button>
+          </div>
+          <div className="flex flex-col items-center gap-4">
+            <p className="text-cyan-100/80 text-center" style={nunitoStyle}>Scan to view menu on your phone</p>
+            <img
+              src="/qr-code.png"
+              alt="QR code for Krusty Krab menu"
+              className="w-48 h-48 sm:w-56 sm:h-56 rounded-xl bg-white/5 p-2 border border-white/10 drop-shadow-[0_8px_24px_rgba(0,0,0,0.3)]"
+            />
           </div>
         </div>
 
