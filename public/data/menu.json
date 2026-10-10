@@ -75,7 +75,7 @@
       "name": "Special",
       "icon": "⭐",
       "items": [
-        { "id": "locomoco-special", "name": "LocoMoco Meal", "price": 15000, "image": "/images/special/LocoMoco Meal.jpg" }
+        { "id": "locomoco-special", "name": "LocoMoco Meal", "price": 6000, "image": "/images/special/LocoMoco Meal.jpg" }
       ]
     }
   ]
