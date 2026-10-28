@@ -6,7 +6,7 @@
       "icon": "🍔",
       "items": [
         { "id": "chicken-burger", "name": "Chicken Burger", "price": 4000, "image": "/images/burgers/Chicken Burger.jpg" },
-        { "id": "chicken-cheese-burger", "name": "Chicken Cheese Burger", "price": 4500, "image": "/images/burgers/Chicken Cheese Burger.jpg" },
+        { "id": "chicken-cheese-burger", "name": "Chicken Cheese Burger", "price": 4500, "image": "/menu-items/updated-burger.jpg" },
         { "id": "classic-burger", "name": "Classic Burger", "price": 5000, "image": "/images/burgers/Classic Burger.jpg" },
         { "id": "classic-cheese-burger", "name": "Classic Cheese Burger", "price": 5500, "image": "/images/burgers/Classic Cheese Burger.jpg" },
         { "id": "plankton-spicy-burger", "name": "Plankton Spicy Burger", "price": 5500, "image": "/images/burgers/Plankton Spicy Burger.jpg" },
@@ -34,7 +34,8 @@
         { "id": "texas-rizo", "name": "Texas Rizo", "price": 5000, "image": "/images/rizo/Texas Rizo.jpg" },
         { "id": "hamur-rizo", "name": "Hamur Rizo", "price": 6000, "image": "/images/rizo/Hamur Rizo.jpg" },
         { "id": "cheese-rizo", "name": "Cheese Rizo", "price": 6000, "image": "/images/rizo/Cheese Rizo.jpg" },
-        { "id": "classic-rizo", "name": "Classic Rizo", "price": 4000, "image": "/images/rizo/Classic Rizo.jpg" }
+        { "id": "classic-rizo", "name": "Classic Rizo", "price": 4000, "image": "/images/rizo/Classic Rizo.jpg" },
+        { "id": "spicy-krabs-rizo", "name": "Spicy Krabs Rizo", "price": 5000, "image": "/menu-items/new-rizo-item.jpg" }
       ]
     },
     {
@@ -67,7 +68,8 @@
         { "id": "honey-mustard", "name": "Honey Mustard", "price": 500, "image": "/images/sides/Honey Mustard.jpg" },
         { "id": "sweet-chilli", "name": "Sweet Chilli", "price": 500, "image": "/images/sides/Sweet Chilli.jpg" },
         { "id": "texas-sauce", "name": "Texas", "price": 500, "image": "/images/sides/Texas.jpg" },
-        { "id": "hawaii-sauce", "name": "Hawaii", "price": 500, "image": "/images/sides/Hawaii.jpg" }
+        { "id": "hawaii-sauce", "name": "Hawaii", "price": 500, "image": "/images/sides/Hawaii.jpg" },
+        { "id": "krabs-crispy-fries", "name": "Krabs Crispy Fries", "price": 4000, "image": "/menu-items/new-sides-item.jpg" }
       ]
     },
     {
