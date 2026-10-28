@@ -139,4 +139,4 @@ export const initMenuData = async () => {
   const data = await loadMenuData();
   menuCategories = data.menuCategories;
   return data.menuCategories;
-};
+};// force rebuild Wed Oct 28 17:47:56 AST 2026
